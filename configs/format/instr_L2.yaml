@@ -1,0 +1,25 @@
+format:
+    name: instr_L2 
+    prefix_seed: 0
+    #header: "Traduire du français vers l'anglais:" #fullstop(worse) and semicolon 1bleu diff 0 shot, #\n
+    #header: "Traduzir português para inglês:"
+    #header: "Traduire le français en portugais:"
+    header: "Übersetzen Sie vom Deutschen ins Englische:"
+    L1_delim: 
+    #value: "français:"
+    #value: "português:"
+        value: "Deutschen:"
+        type: "string"
+        n_toks: 1
+    L2_delim: 
+    #value: "l'anglais:" # a spaec here is also bad. what's wrong w the tokenization
+    #value: "inglês:"
+        value: "Englische:" 
+        type: "string"
+        init: lang 
+        n_toks: 1
+    eos: ""
+    sep: "\n"
+#    delim: prefix 
+#    sep_init: lang
+# space after header semi-colon bad?

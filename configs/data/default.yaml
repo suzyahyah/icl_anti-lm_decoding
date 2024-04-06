@@ -1,0 +1,9 @@
+data:
+    doclevel: sentence
+    trainset: FLORES
+    testset: FLORES
+    direction: en-fr
+    ntest: -1
+    train_data_fn: data/{dataname}/train/{direction}.tsv
+    test_data_fn: data/{dataname}/test/{direction}.tsv
+    dev: False

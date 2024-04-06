@@ -1,0 +1,10 @@
+model:
+    cuda: True
+    model_size: gptn2.7B
+    hack: False
+    save_fol: ""
+    mask_by_attn: False
+    trained: ""
+    layer_mask: False
+    mask_from:
+    mask_row:

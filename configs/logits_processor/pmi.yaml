@@ -1,0 +1,5 @@
+logitsp:
+    name: PMILogits_${logitsp.contrast_logits_type}-${logitsp.alpha}
+    alpha: 0.3
+    contrast_logits_type: x #{x, u}
+    frequency: all

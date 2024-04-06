@@ -1,0 +1,18 @@
+format:
+    name: instr_L1L2_masterful
+    prefix_seed: 0
+    header: "A <L1> phrase is provided. The masterful <L1> translator flawlessly translates the phrase into <L2>:"
+    L1_delim: 
+        value: "<L1>:"
+        type: "string"
+        n_toks: 1
+    L2_delim: 
+        value: "<L2>:" # a spaec here is also bad. what's wrong w the tokenization
+        type: "string"
+        init: lang 
+        n_toks: 1
+    eos: ""
+    sep: "\n"
+#    delim: prefix 
+#    sep_init: lang
+# space after header semi-colon bad?

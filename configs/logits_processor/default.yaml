@@ -1,0 +1,5 @@
+logitsp:
+    name: DefaultLogits
+    alpha: 0
+    frequency: once
+    contrast_logits_type: None

@@ -1,0 +1,5 @@
+logitsp:
+    name: AntiLM_${logitsp.contrast_logits_type}-${logitsp.alpha}_${logitsp.frequency} #L1ReduceConcatLogits
+    alpha: 0.3
+    frequency: logistic #{once, decay, always, alpha}
+    contrast_logits_type: x

@@ -1,0 +1,28 @@
+hf_trainer_cf:
+    overwrite_output_dir: True
+    num_train_epochs: 100 # 100
+    max_steps: -1 #600000
+    per_device_train_batch_size: 8 # 128 follows Mikulik paper
+    per_device_eval_batch_size: 2 # 128 follows Mikulik paper
+    gradient_accumulation_steps: 4 # 128 follows Mikulik paper
+    learning_rate: 0.0001 # follow paper
+    save_steps: 10000 
+    save_total_limit: 5
+    load_best_model_at_end: True
+    do_train: True
+    do_eval: True
+    evaluation_strategy: epoch
+    save_strategy: epoch
+    logging_first_step: True
+    logging_steps: 500
+    seed: 0
+    gradient_checkpointing: False
+    fp16: False
+    remove_unused_columns: False
+    sharded_ddp: ""
+data_collator:
+    type: autoregressive_translation
+
+
+#data_dir: /home/ssia/projects/decoder_nmt/data/iwslt/orig_text
+#data_dir: data/ngram2/t50_vocablen3_alpha0.1/
